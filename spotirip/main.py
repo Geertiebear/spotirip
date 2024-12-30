@@ -121,7 +121,7 @@ async def main(config_path: Path, debug: bool, playlists: Path,
 
     album_ids = [get_album_id(c, uri) for uri in sp_albums]
 
-    limiter = aiolimiter.AsyncLimiter(20, 10)
+    limiter = aiolimiter.AsyncLimiter(20, 1)
     albums: dict[str, AlbumFilter] = {}
 
     try:

@@ -1,0 +1,6 @@
+spotirip/__pycache__
+.env
+.cache
+config.toml
+playlists.txt
+albums.txt
